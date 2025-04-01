@@ -2,6 +2,14 @@
 
 Este repositorio documenta mi proceso de aprendizaje como Desarrollador Web Full-Stack (Python/Django) y mi introducción a los Sistemas de Información Geográfica (SIG), desde Marzo hasta Octubre de 2025.
 
+## Proyecto Central: Portfolio Agro-Geoespacial Interactivo
+
+El objetivo principal de este aprendizaje es construir una landing page personal que funcione como portfolio, combinando:
+1.  **Narrativa de Datos (Data Storytelling):** Análisis detallados y visualizaciones para el sector agropecuario y productivo, utilizando Python (Pandas, GeoPandas) y GIS (QGIS, Leaflet).
+2.  **Dashboard Dinámico:** Widgets con indicadores clave (clima, mercado, datos geoespaciales) actualizados periódicamente, demostrando habilidades en Backend (Python, Django, APIs), Bases de Datos y Frontend (JS Básico + Asistencia IA).
+Este proyecto servirá para aplicar y demostrar todas las habilidades adquiridas en el stack Full-Stack con enfoque en Backend, Datos y GIS.
+
+
 ## Fase 1: Cimientos Web Sólidos 🏗️ + Control de Versiones ️ (Abril - Mayo)
 
 * **Objetivo:** HTML semántico, CSS avanzado (Flexbox, Grid, Responsive), Git/GitHub (flujo de trabajo completo), JavaScript básico.
