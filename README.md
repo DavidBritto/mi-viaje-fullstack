@@ -4,6 +4,8 @@ Este repositorio documenta mi proceso de aprendizaje como Desarrollador Web Full
 
 ## Proyecto Central: Portfolio Agro-Geoespacial Interactivo
 
+🔎Puedes ver el código del proyecto aquí: [Proyecto Landing Page](./portfolio-landing-page/)
+
 El objetivo principal de este aprendizaje es construir una landing page personal que funcione como portfolio, combinando:
 1.  **Narrativa de Datos (Data Storytelling):** Análisis detallados y visualizaciones para el sector agropecuario y productivo, utilizando Python (Pandas, GeoPandas) y GIS (QGIS, Leaflet).
 2.  **Dashboard Dinámico:** Widgets con indicadores clave (clima, mercado, datos geoespaciales) actualizados periódicamente, demostrando habilidades en Backend (Python, Django, APIs), Bases de Datos y Frontend (JS Básico + Asistencia IA).
@@ -39,6 +41,4 @@ Este proyecto servirá para aplicar y demostrar todas las habilidades adquiridas
 * **Recursos Clave:** Documentación específica de tecnologías avanzadas (ej. [GeoDjango](https://docs.djangoproject.com/en/stable/ref/contrib/gis/), [Pandas](https://pandas.pydata.org/docs/), [Leaflet.js](https://leafletjs.com/)), Guías de Despliegue (ej. PythonAnywhere, Heroku).
 
 ---
-
-*Plan de estudio guiado por Gemini - ¡A darle!* 💪
 *(Última actualización: 2025-03-28)*
