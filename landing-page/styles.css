@@ -1,0 +1,279 @@
+/* --- Fuentes y Reseteos Básicos --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Importa regular y bold */
+
+* { /* Reseteo simple */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- Estilos Base y Tema Oscuro (Default para index.html) --- */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Peso regular por defecto */
+    line-height: 1.6; /* Espaciado de línea legible */
+    position: relative; /* Para el fondo absoluto/fijo */
+    /* padding-top: 80px; */ /* Solo si tienes un header fijo en index.html, ajusta 80px al alto real de tu header */
+    /* Eliminamos display:flex y overflow:hidden para permitir scroll y contenido normal */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Peso bold para títulos */
+}
+
+a {
+    color: #00c3ff; /* Color "Tech" para enlaces en tema oscuro */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #7a00ff; /* Otro color tech para hover */
+}
+
+/* Estilo base para header (visible en ambas páginas si usas la misma estructura) */
+header {
+    position: fixed; /* O 'absolute' o 'sticky' según prefieras */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente por defecto */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Alto para estar sobre otros elementos */
+    transition: top 0.3s, background-color 0.3s; /* Añadida transición para bg */
+    box-sizing: border-box;
+}
+
+/* Clase para ocultar header (requiere JS) */
+header.hidden {
+    top: -80px; /* Ajusta este valor al alto real de tu header */
+}
+
+/* Estilos para la navegación dentro del header */
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre elementos del menú */
+}
+header nav ul li a {
+    color: #fff; /* Color de enlaces por defecto en header oscuro */
+    font-weight: 700;
+}
+header nav ul li a:hover {
+    color: #00c3ff; /* Hover tech por defecto */
+}
+
+/* Contenedor principal */
+main {
+    position: relative; /* Para que z-index funcione */
+    z-index: 10; /* Sobre el .background */
+}
+
+/* Estilo base para secciones */
+section {
+    padding: 60px 20px; /* Espaciado estándar */
+    max-width: 1000px; /* Limitar ancho */
+    margin: 0 auto; /* Centrar */
+}
+
+/* Estilos específicos de index.html (Hero) */
+#inicio.hero {
+     /* min-height: calc(100vh - 80px); */ /* Puede que no necesites esto si el body no es flex */
+     min-height: 90vh; /* O simplemente una altura grande */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     position: relative;
+     z-index: 10;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    /* DECIDIR: Gradiente Tech (azul/violeta) o Agro (verde/amarillo)? Dejo el Tech por ahora */
+    background: linear-gradient(135deg, #00c3ff, #7a00ff);
+    /* background: linear-gradient(130deg, #367c2b, #ffde00); */ /* Opción Agro comentada */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+/* Estilo CTA unificado (versión más refinada) */
+.cta {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    color: #fff; /* Color por defecto (tema oscuro) */
+    border: 2px solid #fff; /* Borde por defecto (tema oscuro) */
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añadida border-color a transition */
+    border-radius: 5px;
+    background-color: transparent; /* Asegurar fondo transparente por defecto */
+}
+
+/* Hover CTA unificado (para tema oscuro) */
+.cta:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Fondo de grid (Unificado - versión fija y sutil) */
+.background {
+    position: fixed; /* Fijo para que no se mueva con scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Detrás de todo */
+    background-size: 50px 50px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), /* Más sutil */
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    opacity: 0.5;
+    pointer-events: none; /* Para que no interfiera con clicks */
+}
+
+/* --- Tema Claro (Overrides para agromonitor.html) --- */
+
+body.pagina-agromonitor {
+    background-color: #f4f4f4; /* Gris muy claro como base */
+    color: #333; /* Texto oscuro principal */
+    /* Sobrescribir padding-top si el header es diferente o no existe */
+    /* padding-top: 0; */ /* Ejemplo si no hay header fijo en esta página */
+}
+
+/* Header específico para página AgroMonitor si es necesario */
+body.pagina-agromonitor header {
+   background: #fff; /* Header blanco */
+   border-bottom: 1px solid #ddd;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+body.pagina-agromonitor header nav ul li a {
+    color: #333; /* Texto oscuro en header */
+}
+body.pagina-agromonitor header nav ul li a:hover {
+    color: #367c2b; /* Hover verde JD */
+}
+/* Asegúrate de que el logo se vea bien sobre fondo blanco */
+
+
+/* Títulos y Enlaces con colores Agro */
+body.pagina-agromonitor h1,
+body.pagina-agromonitor h2,
+body.pagina-agromonitor h3 {
+    color: #367c2b; /* Verde JD */
+}
+
+body.pagina-agromonitor a {
+    color: #367c2b; /* Verde JD */
+}
+body.pagina-agromonitor a:hover {
+    color: #2a6021; /* Verde más oscuro */
+}
+
+/* Botón CTA específico para tema claro */
+body.pagina-agromonitor .cta {
+    border-color: #367c2b;
+    color: #367c2b;
+    /* background-color ya es transparent por defecto */
+}
+
+body.pagina-agromonitor .cta:hover {
+    background-color: #367c2b;
+    color: #fff;
+}
+
+/* Estilos específicos para elementos de AgroMonitor */
+/* Inspirados en claridad y funcionalidad tipo JD */
+
+body.pagina-agromonitor .widget,
+body.pagina-agromonitor .data-card,
+body.pagina-agromonitor .map-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+body.pagina-agromonitor .widget-title {
+    font-size: 1.2rem;
+    color: #333;
+    border-bottom: 2px solid #367c2b; /* Línea verde bajo título widget */
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+body.pagina-agromonitor .data-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #367c2b;
+}
+
+body.pagina-agromonitor .data-label {
+    font-size: 0.9rem;
+    color: #666;
+    text-transform: uppercase;
+}
+
+/* Destacado Amarillo JD (usar con moderación) */
+body.pagina-agromonitor .highlight-alert {
+    color: #222; /* Texto oscuro sobre amarillo */
+    background-color: #ffde00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* --- Estilos para Footer (Común para ambas páginas) --- */
+footer {
+    background-color: #111; /* Un gris muy oscuro casi negro */
+    color: #aaa;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 60px; /* Espacio antes del footer */
+    position: relative; /* Para asegurar que está en el flujo normal */
+    z-index: 20; /* Sobre el fondo fijo */
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex; /* Alinear horizontalmente */
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+}
