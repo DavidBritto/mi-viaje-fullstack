@@ -1,279 +1,349 @@
-/* --- Fuentes y Reseteos Básicos --- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); /* Importa regular y bold */
+/* --- Importación de Fuente --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-* { /* Reseteo simple */
+/* --- Variables CSS (Paleta de Colores y Fuente) --- */
+:root {
+    --color-background: #111111; /* Casi negro */
+    --color-text: #E0E0E0;       /* Blanco apagado / Gris claro */
+    --color-heading: #FFFFFF;     /* Blanco puro para títulos */
+    --color-accent: #64FFDA;      /* Verde menta/turquesa como acento */
+    --color-accent-darker: #4dbfa6;/* Versión más oscura para hover */
+    --color-border: #333333;     /* Gris oscuro para bordes sutiles */
+    --font-primary: 'Montserrat', sans-serif;
+    --header-height: 70px; /* Altura del header para padding-top del body */
+}
+
+/* --- Reseteo Básico y Estilos Globales --- */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- Estilos Base y Tema Oscuro (Default para index.html) --- */
-body {
-    background-color: #000;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400; /* Peso regular por defecto */
-    line-height: 1.6; /* Espaciado de línea legible */
-    position: relative; /* Para el fondo absoluto/fijo */
-    /* padding-top: 80px; */ /* Solo si tienes un header fijo en index.html, ajusta 80px al alto real de tu header */
-    /* Eliminamos display:flex y overflow:hidden para permitir scroll y contenido normal */
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-top: var(--header-height); /* Espacio para header fijo */
+}
+
+/* --- Tipografía Base --- */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700; /* Peso bold para títulos */
+    color: var(--color-heading);
+    font-weight: 700;
+    margin-bottom: 0.8em;
+    line-height: 1.3; /* Ajuste para títulos */
+}
+h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); } /* Tamaño fluido para H1 */
+h2 { font-size: 2rem; margin-top: 1em; } /* Añadir margen superior a H2 */
+h3 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1em;
+    max-width: 65ch;
 }
 
 a {
-    color: #00c3ff; /* Color "Tech" para enlaces en tema oscuro */
+    color: var(--color-accent);
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #7a00ff; /* Otro color tech para hover */
+    color: var(--color-accent-darker);
 }
 
-/* Estilo base para header (visible en ambas páginas si usas la misma estructura) */
-header {
-    position: fixed; /* O 'absolute' o 'sticky' según prefieras */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Layout Helpers --- */
+.container {
+    width: 90%; /* Usar porcentaje para flexibilidad */
+    max-width: 1000px; /* Ancho máximo */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Componente: Header --- */
+.header {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente por defecto */
-    padding: 10px 20px;
-    display: flex;
+    background-color: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 0 5%; /* Usar padding horizontal basado en % */
+    height: var(--header-height);
+    display: flex; /* Usar Flex en el header para alinear navbar */
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.navbar {
+    width: 100%;
+    display: flex; /* Flexbox para alinear logo y links */
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Alto para estar sobre otros elementos */
-    transition: top 0.3s, background-color 0.3s; /* Añadida transición para bg */
-    box-sizing: border-box;
 }
 
-/* Clase para ocultar header (requiere JS) */
-header.hidden {
-    top: -80px; /* Ajusta este valor al alto real de tu header */
-}
-
-/* Estilos para la navegación dentro del header */
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px; /* Espacio entre elementos del menú */
-}
-header nav ul li a {
-    color: #fff; /* Color de enlaces por defecto en header oscuro */
+.logo a {
+    color: var(--color-heading);
     font-weight: 700;
-}
-header nav ul li a:hover {
-    color: #00c3ff; /* Hover tech por defecto */
-}
-
-/* Contenedor principal */
-main {
-    position: relative; /* Para que z-index funcione */
-    z-index: 10; /* Sobre el .background */
-}
-
-/* Estilo base para secciones */
-section {
-    padding: 60px 20px; /* Espaciado estándar */
-    max-width: 1000px; /* Limitar ancho */
-    margin: 0 auto; /* Centrar */
-}
-
-/* Estilos específicos de index.html (Hero) */
-#inicio.hero {
-     /* min-height: calc(100vh - 80px); */ /* Puede que no necesites esto si el body no es flex */
-     min-height: 90vh; /* O simplemente una altura grande */
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     position: relative;
-     z-index: 10;
-}
-
-#inicio h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    /* DECIDIR: Gradiente Tech (azul/violeta) o Agro (verde/amarillo)? Dejo el Tech por ahora */
-    background: linear-gradient(135deg, #00c3ff, #7a00ff);
-    /* background: linear-gradient(130deg, #367c2b, #ffde00); */ /* Opción Agro comentada */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    margin-bottom: 15px;
-}
-
-#inicio p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    max-width: 600px;
-}
-
-/* Estilo CTA unificado (versión más refinada) */
-.cta {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 25px;
-    color: #fff; /* Color por defecto (tema oscuro) */
-    border: 2px solid #fff; /* Borde por defecto (tema oscuro) */
+    font-size: 1.5rem; /* Tamaño del logo */
     text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Flexbox para items de menú */
+    gap: 50px;
+    padding: 0; /* Quitar padding por defecto */
+    margin: 0; /* Quitar margen por defecto */
+}
+
+.nav-links a {
+    color: var(--color-text);
     font-weight: 700;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Añadida border-color a transition */
-    border-radius: 5px;
-    background-color: transparent; /* Asegurar fondo transparente por defecto */
-}
-
-/* Hover CTA unificado (para tema oscuro) */
-.cta:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-/* Fondo de grid (Unificado - versión fija y sutil) */
-.background {
-    position: fixed; /* Fijo para que no se mueva con scroll */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Detrás de todo */
-    background-size: 50px 50px;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), /* Más sutil */
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    opacity: 0.5;
-    pointer-events: none; /* Para que no interfiera con clicks */
-}
-
-/* --- Tema Claro (Overrides para agromonitor.html) --- */
-
-body.pagina-agromonitor {
-    background-color: #f4f4f4; /* Gris muy claro como base */
-    color: #333; /* Texto oscuro principal */
-    /* Sobrescribir padding-top si el header es diferente o no existe */
-    /* padding-top: 0; */ /* Ejemplo si no hay header fijo en esta página */
-}
-
-/* Header específico para página AgroMonitor si es necesario */
-body.pagina-agromonitor header {
-   background: #fff; /* Header blanco */
-   border-bottom: 1px solid #ddd;
-   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-body.pagina-agromonitor header nav ul li a {
-    color: #333; /* Texto oscuro en header */
-}
-body.pagina-agromonitor header nav ul li a:hover {
-    color: #367c2b; /* Hover verde JD */
-}
-/* Asegúrate de que el logo se vea bien sobre fondo blanco */
-
-
-/* Títulos y Enlaces con colores Agro */
-body.pagina-agromonitor h1,
-body.pagina-agromonitor h2,
-body.pagina-agromonitor h3 {
-    color: #367c2b; /* Verde JD */
-}
-
-body.pagina-agromonitor a {
-    color: #367c2b; /* Verde JD */
-}
-body.pagina-agromonitor a:hover {
-    color: #2a6021; /* Verde más oscuro */
-}
-
-/* Botón CTA específico para tema claro */
-body.pagina-agromonitor .cta {
-    border-color: #367c2b;
-    color: #367c2b;
-    /* background-color ya es transparent por defecto */
-}
-
-body.pagina-agromonitor .cta:hover {
-    background-color: #367c2b;
-    color: #fff;
-}
-
-/* Estilos específicos para elementos de AgroMonitor */
-/* Inspirados en claridad y funcionalidad tipo JD */
-
-body.pagina-agromonitor .widget,
-body.pagina-agromonitor .data-card,
-body.pagina-agromonitor .map-container {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-
-body.pagina-agromonitor .widget-title {
-    font-size: 1.2rem;
-    color: #333;
-    border-bottom: 2px solid #367c2b; /* Línea verde bajo título widget */
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-body.pagina-agromonitor .data-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #367c2b;
-}
-
-body.pagina-agromonitor .data-label {
     font-size: 0.9rem;
-    color: #666;
-    text-transform: uppercase;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
 }
 
-/* Destacado Amarillo JD (usar con moderación) */
-body.pagina-agromonitor .highlight-alert {
-    color: #222; /* Texto oscuro sobre amarillo */
-    background-color: #ffde00;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-weight: 700;
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; /* Ligeramente debajo */
+    left: 0;
+    background-color: var(--color-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* --- Secciones Generales --- */
+section {
+    padding: 80px 0; /* Espaciado vertical */
+}
+
+/* --- Sección: Hero --- */
+.hero {
+    min-height: calc(80vh - var(--header-height)); /* Altura relativa, menos el header */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 40px 0; /* Padding interno */
+}
+
+.hero-content {
+    max-width: 700px; /* Limitar ancho del contenido hero */
+    margin: 0 auto; /* Centrar */
+    text-align: center;
+}
+
+.hero h1 {
+    /* Estilo H1 ya definido globalmente */
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.1rem; /* Ligeramente más grande */
+    color: var(--color-text);
+    margin-bottom: 1.5em;
+}
+
+/* --- Botones --- */
+.btn-primary, .btn-secondary { /* Estilo base común */
     display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid var(--color-accent);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
 }
 
-/* --- Estilos para Footer (Común para ambas páginas) --- */
-footer {
-    background-color: #111; /* Un gris muy oscuro casi negro */
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-background); /* Texto oscuro sobre fondo accent */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-darker);
+    border-color: var(--color-accent-darker);
+    color: var(--color-background);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+}
+
+/* --- Sección: About --- */
+.about {
+    background-color: #1a1a1a; /* Fondo ligeramente diferente si quieres */
+}
+
+/* --- Sección: Projects --- */
+.projects {
+    /* Estilos generales de la sección */
+}
+
+.project-list {
+    display: grid; /* Usamos Grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+    gap: 30px;
+    margin-top: 2em; /* Espacio después del H2 */
+}
+
+.project-item {
+    background-color: #1f1f1f; /* Color de tarjeta */
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 25px;
+    display: flex; /* Usar flex para organizar contenido interno */
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: var(--color-accent); /* Título de tarjeta con acento */
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.project-item p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Hace que el párrafo ocupe espacio disponible */
+}
+
+.project-item .btn-secondary {
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    align-self: flex-start; /* Alinea el botón a la izquierda */
+}
+
+/* --- Sección: Contact --- */
+.contact {
+    background-color: #1a1a1a; /* Fondo ligeramente diferente si quieres */
+}
+
+.contact-form {
+    max-width: 600px; /* Limitar ancho del form */
+    margin: 2em auto 0 auto; /* Centrar y espaciar */
+}
+
+.contact-form label {
+    display: block; /* Labels en su propia línea */
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+    min-height: 120px;
+}
+
+.contact-form button[type="submit"] {
+    /* Usa los estilos de .btn-primary definidos antes */
+    width: 100%; /* Ocupar todo el ancho */
+}
+
+
+/* --- Footer --- */
+.footer {
+    background-color: #111; /* Igual que el body o ligeramente diferente */
     color: #aaa;
-    padding: 30px 20px;
+    padding: 30px 0; /* Padding vertical */
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 60px; /* Espacio antes del footer */
-    position: relative; /* Para asegurar que está en el flujo normal */
-    z-index: 20; /* Sobre el fondo fijo */
+    margin-top: 80px;
+    border-top: 1px solid var(--color-border);
 }
 
-footer h4 {
-    color: #fff;
-    margin-bottom: 10px;
+.footer p {
+    margin: 0; /* Quitar margen default del p dentro del footer */
+    max-width: none; /* Permitir que ocupe el ancho */
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
-    display: flex; /* Alinear horizontalmente */
-    justify-content: center;
-    gap: 15px;
-}
 
-footer ul li a {
-    color: #aaa;
-    text-decoration: none;
-}
+/* --- Responsive Básico (Ajustar según necesidad) --- */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 60px; /* Header más pequeño en móvil */
+    }
+    body {
+        padding-top: var(--header-height);
+        font-size: 15px;
+    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
 
-footer ul li a:hover {
-    color: #fff;
+    .header {
+        padding: 0 15px;
+    }
+    .navbar {
+        /* Aquí iría la lógica para menú hamburguesa si lo implementas */
+    }
+    .nav-links {
+        /* Por defecto oculto en móvil, se mostraría con JS */
+        /* display: none; */
+        gap: 15px; /* Menos espacio */
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+        gap: 20px;
+    }
 }
