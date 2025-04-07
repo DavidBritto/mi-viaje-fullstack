@@ -3,68 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agro Data Specialist</title>
+    <meta name="description" content="Portfolio personal de desarrollador fullstack.">
+    <title>Portfolio Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <nav>
-              <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="agromonitor.html">AgroMonitor IA</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Mi Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="background"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DAVID BRITTO</h1>
+            <p>Desarrollador Fullstack. Entusiasta por casi todo y experto en casi  nada</p>
+            <a href="#projects" class="btn-primary">Ver Proyectos</a>
+        </div>
+    </section>
 
-        <section id="inicio" class="hero">
-            <h1>Grandes Decisiones Basadas en Grandes Datos</h1>
-            <p>Transformamos datos en decisiones inteligentes con visualización avanzada y análisis geoespacial de tu campo</p>
-            <a href="agromonitor.html" class="cta">Descubre tu campo</a>
-        </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Soy Diseñador UX/UI & desarrollador fullstack con entusiasta por las tecnologías modernas y un enfoque en la creación de aplicaciones web eficientes y escalables.</p>
+        </div>
+    </section>
 
-    
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li>[Aquí va la lista placeholder de 'Habilidades'...]</li>
-            </ul>
-            </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project-list">
+                <article class="project-item">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="#" class="btn-secondary">Ver más</a>
+                </article>
+                <article class="project-item">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto.</p>
+                    <a href="#" class="btn-secondary">Ver más</a>
+                </article>
+                <!-- Agrega más proyectos según sea necesario -->
+            </div>
+        </div>
+    </section>
 
-        <section id="proyectos">
-            <h2>Proyectos y Análisis</h2>
-            <article>
-                <h3>[Placeholder Título Proyecto 1]</h3>
-                <p>[Placeholder Descripción Proyecto 1]</p>
-                <p><small>[Placeholder Tecnologías Usadas]</small></p>
-                <a href="#">[ Ver Más (Próximamente) ]</a>
-            </article>
-            </section>
-
-        <section id="dashboard">
-            <h2>Dashboard Agro (En Construcción)</h2>
-            <p>[Placeholder Texto Dashboard...]</p>
-            </section>
-
-        <section id="contacto">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
             <h2>Contacto</h2>
-            <p>[Placeholder Texto Contacto...]</p>
-            </section>
+            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
 
-    </main>
-
-    <footer>
-        <h4>[Tu Nombre / Data Vision Lab]</h4> <p>© 2025 | General San Martín, Chaco, Argentina.</p> <ul>
-            <li><a href="URL_GITHUB">[GitHub]</a></li>
-            <li><a href="URL_LINKEDIN">[LinkedIn]</a></li>
-            </ul>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+        </div>
     </footer>
-
-    </body>
+</body>
 </html>
