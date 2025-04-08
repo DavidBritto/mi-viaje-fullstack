@@ -1,5 +1,7 @@
 /* --- Importación de Fuente --- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Usamos Google Fonts para Montserrat y Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 
 /* --- Variables CSS (Paleta de Colores y Fuente) --- */
 :root {
@@ -10,7 +12,8 @@
     --color-accent-darker: #4dbfa6;/* Versión más oscura para hover */
     --color-border: #333333;     /* Gris oscuro para bordes sutiles */
     --font-primary: 'Montserrat', sans-serif;
-    --header-height: 70px; /* Altura del header para padding-top del body */
+    --header-height: 70px; 
+    --font-monospace: 'Roboto Mono', monospace;/* Altura del header para padding-top del body */
 }
 
 /* --- Reseteo Básico y Estilos Globales --- */
@@ -111,29 +114,22 @@ img {
     margin: 0; /* Quitar margen por defecto */
 }
 
-.nav-links a {
-    color: var(--color-text);
-    font-weight: 700;
-    font-size: 0.9rem;
-    padding: 5px 0;
-    position: relative;
-    text-decoration: none;
+.nav-links:hover a {
+    opacity: 0.5; /* Baja la opacidad de TODOS los enlaces al hacer hover en la lista */
+    transition: opacity 0.2s ease-in-out; /* Transición suave para el efecto */
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px; /* Ligeramente debajo */
-    left: 0;
-    background-color: var(--color-accent);
-    transition: width 0.3s ease;
+.nav-links a:hover {
+    opacity: 1; /* Restaura la opacidad completa al enlace específico */
+    color: var(--color-accent); /* Asegura que sea blanco brillante */
+    transition: color 0.3s ease; /* Transición suave para el color */
 }
 
+/* NO cambies esto, asegura que la línea aparezca en hover */
 .nav-links a:hover::after {
-    width: 100%;
+     width: 100%;
 }
+
 
 /* --- Secciones Generales --- */
 section {
