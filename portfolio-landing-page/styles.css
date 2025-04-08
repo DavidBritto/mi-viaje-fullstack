@@ -28,13 +28,56 @@ html {
 }
 
 body {
-    background-color: var(--color-background);
+    background-color: var(--color-background); /* Color base por si falla la animación */
     color: var(--color-text);
     font-family: var(--font-primary);
-    font-size: 16px;
+    font-weight: 400;
     line-height: 1.6;
-    padding-top: var(--header-height); /* Espacio para header fijo */
+    position: relative; /* Necesario para el z-index del contenido */
+    overflow-x: hidden; /* Prevenir scroll horizontal por animación */
+    padding-top: var(--header-height); /* Mantener si el header es fijo */
+
+     /* Fondo con Gradiente Animado */
+    background: linear-gradient( /* Un gradiente con varios colores oscuros/sutiles */
+        -45deg, /* Ángulo de la transición */
+        #0f0f0f, /* Casi negro */
+        var(--color-background), /* Tu negro base */
+        #1a1a1a, /* Gris oscuro */
+        #0d1b2a /* Un azul muy oscuro como variante */
+    );
+    background-size: 400% 400%; /* Hacemos el gradiente mucho más grande que la pantalla */
+    animation: gradientFlow 25s ease infinite; /* Aplicamos la animación */
 }
+
+/* Definición de la animación para mover el fondo */
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%; /* Empieza en una posición */
+    }
+    50% {
+        background-position: 100% 50%; /* Se mueve a otra posición a la mitad */
+    }
+    100% {
+        background-position: 0% 50%; /* Vuelve al inicio para ciclo infinito */
+    }
+}
+
+/* Estilo para el div .background (la rejilla) */
+.background {
+    position: fixed; /* Fijo para que no se mueva con el scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* ¡IMPORTANTE! Lo pone DETRÁS del contenido del body */
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), /* Grid más sutil */
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px; /* Tamaño de la rejilla */
+    opacity: 0.5; /* Opacidad de la rejilla */
+    pointer-events: none; /* Para que no interfiera con clics */
+}
+
 
 /* --- Tipografía Base --- */
 h1, h2, h3, h4, h5, h6 {
@@ -78,7 +121,7 @@ img {
 
 /* --- Componente: Header --- */
 .header {
-    position: fixed;
+    position: relative; /*relative para el header */
     top: 0;
     left: 0;
     width: 100%;
@@ -88,7 +131,7 @@ img {
     height: var(--header-height);
     display: flex; /* Usar Flex en el header para alinear navbar */
     align-items: center;
-    z-index: 1000;
+    z-index: 1;
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -114,6 +157,16 @@ img {
     margin: 0; /* Quitar margen por defecto */
 }
 
+.nav-links a {
+    color: var(--color-text); /* Color de texto por defecto */
+    font-family: var(--font-monospace); /* Fuente monoespaciada para enlaces */
+    font-weight: 700; /* Peso de fuente */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 0.9rem; 
+    padding: 5px 0; /* Espaciado interno */
+    position: relative; /* Para el pseudo-elemento ::after */
+    transition: color 0.3s ease;  opacity: 0.2s ease-in-out;/* Transición suave para el color */
+}
 .nav-links:hover a {
     opacity: 0.5; /* Baja la opacidad de TODOS los enlaces al hacer hover en la lista */
     transition: opacity 0.2s ease-in-out; /* Transición suave para el efecto */
@@ -138,6 +191,8 @@ section {
 
 /* --- Sección: Hero --- */
 .hero {
+    z-index: 2;
+    position: relative; /* Para que el contenido esté por encima del background */
     min-height: calc(80vh - var(--header-height)); /* Altura relativa, menos el header */
     display: flex;
     align-items: center; /* Centrar verticalmente el contenido */
@@ -145,7 +200,7 @@ section {
 }
 
 .hero-content {
-    max-width: 700px; /* Limitar ancho del contenido hero */
+    max-width: 900px; /* Limitar ancho del contenido hero */
     margin: 0 auto; /* Centrar */
     text-align: center;
 }
@@ -153,12 +208,14 @@ section {
 .hero h1 {
     /* Estilo H1 ya definido globalmente */
     margin-bottom: 0.5em;
+    font-size: 100px;
 }
 
 .hero p {
     font-size: 1.1rem; /* Ligeramente más grande */
-    color: var(--color-text);
+    color: var(--color-text); /* Color de texto gris claro */
     margin-bottom: 1.5em;
+    font: var(--font-monospace); /* Cambiar a fuente monoespaciada */
 }
 
 /* --- Botones --- */
@@ -295,6 +352,8 @@ section {
 
 /* --- Footer --- */
 .footer {
+    position: relative; /* Para que no se superponga al contenido */
+    z-index: 1; /* Asegurarse que esté por encima del background */
     background-color: #111; /* Igual que el body o ligeramente diferente */
     color: #aaa;
     padding: 30px 0; /* Padding vertical */
