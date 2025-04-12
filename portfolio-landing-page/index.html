@@ -3,86 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio personal de desarrollador fullstack.">
-    <title>Portfolio Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <meta name="description" content="Portfolio personal de desarrollador fullstack con enfoque en Datos y GIS Agropecuario."> <title>David Britto - Portfolio</title> <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
-    <!-- Header Section -->
+    <div class="background"></div>
+
     <header class="header">
-        <div class="background">
         <nav class="navbar">
             <div class="logo">
-                <a href="#">DavidB:/</a>
+                <a href="#">DavidB:</a>
             </div>
             <ul class="nav-links">
                 <li><a href="#hero">/home</a></li>
                 <li><a href="#expertise">/expertise</a></li>
-                <li><a href="#portfolio">/Portfolio</a></li>
+                <li><a href="#portfolio">/portfolio</a></li>
                 <li><a href="#experience">/experience</a></li>
                 <li><a href="#contact">/contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>DAVID BRITTO</h1>
-            <p>UX/UI Designer & Fullstack Developer.</p>
-            <p>Transformando datos complejos en soluciones web efectivas.</p>
-            <a href="#portfolio" class="btn-primary">Ver Proyectos</a>
-        </div>
-    </section>
-        </div>
-    </section>
-
-    <!-- portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>/portfolio</h2>
-            <p>Combino diseño UX/UI y desarrollo backend para crear soluciones web que convierten datos complejos (incluyendo geoespaciales y satelitales) en información útil y visualizaciones claras para el sector productivo. Experiencia en análisis de datos y GIS.</p>
-            <div class="project-list">
-                <article class="project-item">
-                    <h3>Widget de clima</h3>
-                    <p>Descripción breve del proyecto.</p>
-                    <a href="#" class="btn-secondary">Ver más</a>
-                </article>
-                <article class="project-item">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción breve del proyecto.</p>
-                    <a href="#" class="btn-secondary">Ver más</a>
-                </article>
-                <!-- Agrega más proyectos según sea necesario -->
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">{David<span>Britto}:</span></h1>
+                <p>{UX/UI Designer & Fullstack Developer con fuerte dominio en backend y enfoque en experiencias que funcionan.}</p>
+                <p>{Convierto datos complejos en soluciones web claras, funcionales y escalables.}</p>
+                <a href="#portfolio" class="btn-primary">Ver Proyectos</a>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="expertise" class="expertise">
+            <div class="container">
+                <h2>/My Expertise:</h2>
+                <p>[Contenido sobre habilidades y expertise irá aquí...]</p>
+            </div>
+        </section>
 
-    <!-- contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>/contact</h2>
-            <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            <form action="#" method="post" class="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit" class="btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+        <section id="portfolio" class="projects">
+            <div class="container">
+                <h2>/My Portfolio:</h2>
+                <p>Combino diseño UX/UI y desarrollo backend para crear soluciones web que convierten datos complejos (incluyendo geoespaciales y satelitales) en información útil y visualizaciones claras para el sector productivo. Experiencia en análisis de datos y GIS.</p>
+                <div class="project-list">
+                    <article class="project-item">
+                        <h3>Widget de clima</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#" class="btn-secondary">Ver más</a>
+                    </article>
+                    <article class="project-item">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve del proyecto.</p>
+                        <a href="#" class="btn-secondary">Ver más</a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
+         <section id="experience" class="experience">
+             <div class="container">
+                <h2>/experience</h2>
+                <p>[Contenido sobre experiencia laboral irá aquí...]</p>
+             </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>/contact</h2>
+                <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main> <footer class="footer">
         <div class="container">
-            <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
-        </div>
+            <p>&copy; 2025 David Britto. Todos los derechos reservados.</p> </div>
     </footer>
-</body>
+
+    </body>
 </html>

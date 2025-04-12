@@ -1,10 +1,7 @@
-# Semana 1: 31 Mar - 04 Abr
+# Etapa 1: 13 Mar - 13 Abr
 
-**Foco Principal (Informatorio + Autoestudio):** Fundamentos CSS (Selectores, Flexbox, Grid, BEM), Práctica Git, Investigación Fuentes Datos Agro/GIS, Preparación Intro Python.
+**Foco Principal (Informatorio + Autoestudio):** Fundamentos CSS (Selectores, Flexbox, Grid, BEM), Práctica Git, Investigación Fuentes.
 
----
-
-## Miércoles, 02 Abril
 
 * **Objetivo(s) Sugeridos:**
     * [ ] **Consolidar BEM:** Elige otra sección de tu `index.html` (ej. el `footer` o una sección placeholder como `#sobre-mi`) y reestructura sus clases siguiendo estrictamente la metodología BEM (`bloque__elemento--modificador`). Aplica estilos básicos si es necesario.
@@ -17,36 +14,23 @@
     * Flexbox vs Grid: [Artículo Comparativo (CSS Tricks)](https://css-tricks.com/css-grid-vs-flexbox-a-practical-comparison/)
     * Fuentes de Datos (Ideas para buscar): SIG Chaco / IDE Chaco, Ministerio de Producción Chaco, INTA Argentina (datos regionales), Servicio Meteorológico Nacional (SMN), Datos satelitales (Copernicus Open Access Hub para Sentinel, USGS EarthExplorer para Landsat).
 
-* **Progreso Registrado (Tuyo):**
-    * - [ ] Tarea BEM completada.
-    * - [ ] Revisión/Práctica Flexbox/Grid realizada.
-    * - [ ] Investigación de fuentes de datos iniciada (Fuentes encontradas: ...).
-    * - [ ] Commit realizado.
-    * *(Describe brevemente lo que hiciste o lograste)*
+### Resumen Semanal (Objetivos Logrados)
 
-* **Notas/Descubrimientos (Tuyo):**
-    * *(¿Alguna duda con BEM? ¿Encontraste una fuente de datos interesante? ¿Algún problema con CSS o Git?)*
+* [x] Configuración inicial del proyecto y repositorio Git.
+* [x] Creación de estructura HTML semántica base para la landing page (`header`, `nav`, `main`, `section`, `footer`).
+* [x] Aplicación y práctica de CSS:
+    * Selectores básicos y avanzados.
+    * Modelo de Caja, Posicionamiento básico.
+    * **Flexbox** para layouts (header/nav).
+    * **Grid** para layouts (placeholders iniciales de proyectos).
+    * Introducción y aplicación inicial de metodología **BEM**.
+    * Uso de **Variables CSS** (`:root`).
+    * Estilos de tipografía (Google Fonts: Inter, Roboto Mono).
+    * Efectos hover básicos y con pseudo-elementos (`::after`) en menú.
+* [x] Separación de CSS en archivo externo (`styles.css`).
+* [x] Diagnóstico y corrección de problemas de **apilamiento CSS (`z-index`, `position`)**.
+* [x] Investigación inicial de fuentes de datos Agro/GIS para Chaco.
+* [x] Commits y push regulares a GitHub.
+* *(Temas alineados con CSS de Etapa 1 Informatorio)*
 
 * **Enlace Proyecto:** [Portfolio Landing Page](./portfolio-landing-page/)
-
-* **(Opcional) Commit(s) del día:** `[Pega aquí el mensaje o hash de tu commit si quieres]`
-
----
-
-## Jueves, 03 Abril
-
-* **Objetivo(s) Sugeridos:**
-    * *(Lo definiremos mañana)*
-* **Recursos:**
-    * ...
-* **Progreso Registrado (Tuyo):**
-    * ...
-* **Notas/Descubrimientos (Tuyo):**
-    * ...
-* **Enlace Proyecto:** [Portfolio Landing Page](./portfolio-landing-page/)
-* **(Opcional) Commit(s) del día:** `[...]`
-
----
-
-## Viernes, 04 Abril
-... (y así sucesivamente) ...

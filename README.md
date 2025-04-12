@@ -1,44 +1,28 @@
-# Mi Viaje de Aprendizaje Full-Stack + SIG 🚀
+# Aprendiendo Full-Stack + Backend + GIS 🚀
 
-Este repositorio documenta mi proceso de aprendizaje como Desarrollador Web Full-Stack (Python/Django) y mi introducción a los Sistemas de Información Geográfica (SIG), desde Marzo hasta Octubre de 2025.
+Portfolio y registro de mi aprendizaje como Desarrollador con enfoque en Backend, Análisis de Datos y GIS aplicado al sector Agropecuario/Productivo.
 
-## Proyecto Central: Portfolio Agro-Geoespacial Interactivo
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?logo=linkedin&logoColor=white)](URL_DE_TU_LINKEDIN) ![Estado](https://img.shields.io/badge/Estado-En%20Progreso-yellow)
 
-🔎Puedes ver el código del proyecto aquí: [Proyecto Landing Page](./portfolio-landing-page/)
+## Sobre Mí
+Desarrollo aplicaciones web y  análisis de datos (con foco en GIS y datos satelitales) para el sector productivo. Combino backend con Python y diseño UX para entregar información clara y accionable.
 
-El objetivo principal de este aprendizaje es construir una landing page personal que funcione como portfolio, combinando:
-1.  **Narrativa de Datos (Data Storytelling):** Análisis detallados y visualizaciones para el sector agropecuario y productivo, utilizando Python (Pandas, GeoPandas) y GIS (QGIS, Leaflet).
-2.  **Dashboard Dinámico:** Widgets con indicadores clave (clima, mercado, datos geoespaciales) actualizados periódicamente, demostrando habilidades en Backend (Python, Django, APIs), Bases de Datos y Frontend (JS Básico + Asistencia IA).
-Este proyecto servirá para aplicar y demostrar todas las habilidades adquiridas en el stack Full-Stack con enfoque en Backend, Datos y GIS.
+## Proyecto Central: Landing Page de Portfolio 🎯
+El objetivo principal es construir una landing page personal que funcione como portfolio, combinando: ... (Data Storytelling y Dashboard Dinámico) ...
 
+## Proceso de Aprendizaje y Bitácora Detallada
+Mi aprendizaje sigue un plan estructurado por fases y se documenta semanalmente. Puedes encontrar el detalle del plan y el acceso a las bitácoras semanales aquí:
+* **[Ver Plan de Estudio y Bitácora Completa](./BITACORA_APRENDIZAJE.md)**
 
-## Fase 1: Cimientos Web Sólidos 🏗️ + Control de Versiones ️ (Abril - Mayo)
+## Tecnologías Principales
+* Python | Django | SQL (MySQL/PostgreSQL+PostGIS) | Pandas | GeoPandas | QGIS
+* HTML | CSS | JavaScript | Leaflet
+* Git | GitHub | VS Code
+* (Próximamente: AWS/Azure, Conceptos Big Data/Dask, React?)
 
-* **Objetivo:** HTML semántico, CSS avanzado (Flexbox, Grid, Responsive), Git/GitHub (flujo de trabajo completo), JavaScript básico.
-* **Enfoque:** Construir interfaces estáticas bien estructuradas y versionadas.
-* **Nivel:** De 0 a Intermedio en Frontend estático y Git.
-* **Recursos Clave:** [MDN Web Docs (ES)](https://developer.mozilla.org/es/docs/Web), [Libro Pro Git (ES)](https://git-scm.com/book/es/v2)
-
-## Fase 2: Dinamismo Frontend & Python Backend 🐍 (Junio - Julio)
-
-* **Objetivo:** JavaScript avanzado (DOM, Asincronía, ES6+). Fundamentos sólidos de Python (sintaxis, estructuras de datos, POO). Introducción a Bases de Datos Relacionales y MySQL 💾. Testing unitario básico (`unittest`/`pytest`). Inglés técnico 🇬🇧.
-* **Enfoque:** Hacer sitios web interactivos. Dominar Python (¡con PEP 8!). Entender BBDD.
-* **Nivel:** Intermedio en Frontend dinámico, Intermedio en Python, Principiante en BBDD y Testing.
-* **Recursos Clave:** [MDN JavaScript (ES)](https://developer.mozilla.org/es/docs/Web/JavaScript), [Tutorial Python Oficial (ES)](https://docs.python.org/es/3/tutorial/index.html), [PEP 8 Guide](https://peps.python.org/pep-0008/)
-
-## Fase 3: Full-Stack con Django & Intro SIG 🗺️ (Agosto - Septiembre)
-
-* **Objetivo:** Framework Django (ORM, Vistas, Templates, Admin, Forms). APIs REST básicas (DRF). Conexión Frontend-Backend. Testing en Django. Introducción a SIG (Conceptos, QGIS básico). Intro Análisis de Datos con Python (Pandas, NumPy) 📊.
-* **Enfoque:** Construir aplicaciones web completas. Aprender ecosistema Django. Primeros pasos Geoespaciales y con Datos.
-* **Nivel:** Intermedio en Stack Full-Stack (Django), Principiante-Intermedio en Testing, Principiante en SIG y Análisis de Datos.
-* **Recursos Clave:** [Tutorial Oficial Django (ES)](https://docs.djangoproject.com/es/stable/intro/tutorial01/), [Tutorial Django Girls (ES)](https://tutorial.djangogirls.org/es/), [Documentación QGIS (ES)](https://docs.qgis.org/latest/es/docs/user_manual/)
-
-## Fase 4: Consolidación & Profundización 🚀 (Octubre)
-
-* **Objetivo:** Proyecto Full-Stack completo y pulido ✨. Despliegue. Temas avanzados Django/Python. Profundizar en SIG (Web mapping) o Análisis de Datos. Mejorar portfolio 💼. Inglés conversacional.
-* **Enfoque:** Demostrar habilidades construyendo algo robusto. Poner proyectos online. Explorar especialización.
-* **Nivel:** Intermedio-Avanzado en Stack Django, Intermedio en áreas complementarias (SIG/Datos).
-* **Recursos Clave:** Documentación específica de tecnologías avanzadas (ej. [GeoDjango](https://docs.djangoproject.com/en/stable/ref/contrib/gis/), [Pandas](https://pandas.pydata.org/docs/), [Leaflet.js](https://leafletjs.com/)), Guías de Despliegue (ej. PythonAnywhere, Heroku).
+## Contacto
+* Puedes encontrarme en [LinkedIn](URL_DE_TU_LINKEDIN).
+* O usar el formulario en la [sección de contacto](#contact) de mi portfolio (cuando esté funcional).
 
 ---
-*(Última actualización: 2025-03-28)*
+*(Última actualización: [12/04/2025])*

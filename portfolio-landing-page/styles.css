@@ -1,404 +1,263 @@
-/* --- Importación de Fuente --- */
-/* Usamos Google Fonts para Montserrat y Roboto Mono */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
-
-/* --- Variables CSS (Paleta de Colores y Fuente) --- */
+/* --- Importación de Fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@450&display=swap');
+/* --- Variables CSS --- */
 :root {
-    --color-background: #111111; /* Casi negro */
-    --color-text: #E0E0E0;       /* Blanco apagado / Gris claro */
-    --color-heading: #FFFFFF;     /* Blanco puro para títulos */
-    --color-accent: #64FFDA;      /* Verde menta/turquesa como acento */
-    --color-accent-darker: #4dbfa6;/* Versión más oscura para hover */
-    --color-border: #333333;     /* Gris oscuro para bordes sutiles */
-    --font-primary: 'Montserrat', sans-serif;
-    --header-height: 70px; 
-    --font-monospace: 'Roboto Mono', monospace;/* Altura del header para padding-top del body */
+    --color-background: #111111;
+    --color-text: #E0E0E0;
+    --color-heading: #FFFFFF;
+    --color-accent: #74cc0f;
+    --color-accent-darker:#12be37;
+    --color-border: #333333;
+    --color-card-bg: #1a1a1a;
+    --font-primary: 'Ibm Plex Mono', monospace;
+    --font-monospace: 'Fira Code', monospace;
+    --header-height: 70px;
 }
 
 /* --- Reseteo Básico y Estilos Globales --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
-    background-color: var(--color-background); /* Color base por si falla la animación */
     color: var(--color-text);
     font-family: var(--font-primary);
     font-weight: 400;
     line-height: 1.6;
-    position: relative; /* Necesario para el z-index del contenido */
-    overflow-x: hidden; /* Prevenir scroll horizontal por animación */
-    padding-top: var(--header-height); /* Mantener si el header es fijo */
+    position: relative;
+    overflow-x: hidden;
+    padding-top: var(--header-height); /* Espacio para header fijo */
 
-     /* Fondo con Gradiente Animado */
-    background: linear-gradient( /* Un gradiente con varios colores oscuros/sutiles */
-        -45deg, /* Ángulo de la transición */
-        #0f0f0f, /* Casi negro */
-        var(--color-background), /* Tu negro base */
-        #1a1a1a, /* Gris oscuro */
-        #0d1b2a /* Un azul muy oscuro como variante */
+    /* Fondo Animado - ASEGÚRATE DE NO TENER OTRA REGLA background-color PARA body */
+    background: linear-gradient(
+        -120deg,
+        #0078ff,
+        #667eea,
+        #492b68,
+        #64ceff,
+        var(--color-background)
     );
-    background-size: 400% 400%; /* Hacemos el gradiente mucho más grande que la pantalla */
-    animation: gradientFlow 25s ease infinite; /* Aplicamos la animación */
+   background-size: 400% 400%;
+    animation: gradientFlow 10s ease infinite;
 }
 
-/* Definición de la animación para mover el fondo */
+/* --- Keyframes para Animación del Fondo --- */
 @keyframes gradientFlow {
-    0% {
-        background-position: 0% 50%; /* Empieza en una posición */
-    }
-    50% {
-        background-position: 100% 50%; /* Se mueve a otra posición a la mitad */
-    }
-    100% {
-        background-position: 0% 50%; /* Vuelve al inicio para ciclo infinito */
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-/* Estilo para el div .background (la rejilla) */
+/* --- Capa de Grid Fija --- */
 .background {
-    position: fixed; /* Fijo para que no se mueva con el scroll */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* ¡IMPORTANTE! Lo pone DETRÁS del contenido del body */
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: -1; /* DETRÁS */
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), /* Grid más sutil */
-        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px; /* Tamaño de la rejilla */
-    opacity: 0.5; /* Opacidad de la rejilla */
-    pointer-events: none; /* Para que no interfiera con clics */
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 45px 45px;
+    opacity: 0.6;
+    pointer-events: none;
 }
-
 
 /* --- Tipografía Base --- */
-h1, h2, h3, h4, h5, h6 {
-    color: var(--color-heading);
-    font-weight: 700;
-    margin-bottom: 0.8em;
-    line-height: 1.3; /* Ajuste para títulos */
-}
-h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); } /* Tamaño fluido para H1 */
-h2 { font-size: 2rem; margin-top: 1em; } /* Añadir margen superior a H2 */
+h1, h2, h3, h4, h5, h6 { color: var(--color-heading); font-weight: 700; margin-bottom: 0.8em; line-height: 1.3;}
+h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); }
+h2 { font-size: 2rem; margin-top: 1em; }
 h3 { font-size: 1.5rem; }
-
-p {
-    margin-bottom: 1em;
-    max-width: 65ch;
-}
-
-a {
-    color: var(--color-accent);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--color-accent-darker);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+p { margin-bottom: 1em; max-width: 65ch; }
+a { color: var(--color-accent); text-decoration: none; transition: color 0.3s ease;}
+a:hover { color: var(--color-accent-darker); }
+img { max-width: 100%; height: auto; display: block; }
 
 /* --- Layout Helpers --- */
-.container {
-    width: 90%; /* Usar porcentaje para flexibilidad */
-    max-width: 1000px; /* Ancho máximo */
-    margin-left: auto;
-    margin-right: auto;
+.container { 
+    width: 90%; 
+    max-width: 1000px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
-/* --- Componente: Header --- */
+/* --- Componente: Header (Fijo y Semi-Transparente) --- */
 .header {
-    position: relative; /*relative para el header */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(17, 17, 17, 0.85);
-    backdrop-filter: blur(10px);
-    padding: 0 5%; /* Usar padding horizontal basado en % */
-    height: var(--header-height);
-    display: flex; /* Usar Flex en el header para alinear navbar */
-    align-items: center;
-    z-index: 1;
-    border-bottom: 1px solid var(--color-border);
+    position: fixed; /* FIJO */
+    top: 0; left: 0; width: 100%; height: var(--header-height);
+    background-color: rgba(17, 17, 17, 0.40); /* Fondo oscuro con 40% opacidad */
+    backdrop-filter: blur(10px); /* Efecto "cristal esmerilado" */ 
+    z-index: 1000; /* Encima de todo */
+    display: flex; align-items: center; padding: 0 5%;
+}
+.navbar { 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-.navbar {
-    width: 100%;
-    display: flex; /* Flexbox para alinear logo y links */
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    color: var(--color-heading);
-    font-weight: 700;
-    font-size: 1.5rem; /* Tamaño del logo */
+.logo a { 
+    color: var(--color-heading); 
     text-decoration: none;
+    font-size: 1.5rem; 
+    font-weight: 700;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex; /* Flexbox para items de menú */
-    gap: 50px;
-    padding: 0; /* Quitar padding por defecto */
-    margin: 0; /* Quitar margen por defecto */
+/* --- Nav Links con Hover Funcional --- */
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 35px; 
+    padding: 0; 
+    margin: 0; 
 }
-
 .nav-links a {
-    color: var(--color-text); /* Color de texto por defecto */
-    font-family: var(--font-monospace); /* Fuente monoespaciada para enlaces */
-    font-weight: 700; /* Peso de fuente */
-    text-decoration: none; /* Quitar subrayado */
-    font-size: 0.9rem; 
-    padding: 5px 0; /* Espaciado interno */
-    position: relative; /* Para el pseudo-elemento ::after */
-    transition: color 0.3s ease;  opacity: 0.2s ease-in-out;/* Transición suave para el color */
-}
-.nav-links:hover a {
-    opacity: 0.5; /* Baja la opacidad de TODOS los enlaces al hacer hover en la lista */
-    transition: opacity 0.2s ease-in-out; /* Transición suave para el efecto */
+    color: var(--color-text);
+    font-family: var(--font-monospace);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease, opacity 0.2s ease-in-out; /* Transiciones base */
 }
 
-.nav-links a:hover {
-    opacity: 1; /* Restaura la opacidad completa al enlace específico */
-    color: var(--color-accent); /* Asegura que sea blanco brillante */
-    transition: color 0.3s ease; /* Transición suave para el color */
+.nav-links:hover a { /* Atenuar todos al pasar por la lista */
+    opacity: 0.5;
+}
+.nav-links a:hover { /* Resaltar el específico */
+    opacity: 1;
+    color: var(--color-accent);
 }
 
-/* NO cambies esto, asegura que la línea aparezca en hover */
-.nav-links a:hover::after {
-     width: 100%;
-}
-
-
-/* --- Secciones Generales --- */
-section {
-    padding: 80px 0; /* Espaciado vertical */
-}
+/* --- Contenido Principal y Secciones --- */
+main { position: relative; z-index: 1; } /* Encima del fondo */
+section { padding: 80px 0; position: relative; z-index: 2; } /* Secciones encima de main */
 
 /* --- Sección: Hero --- */
-.hero {
-    z-index: 2;
-    position: relative; /* Para que el contenido esté por encima del background */
-    min-height: calc(80vh - var(--header-height)); /* Altura relativa, menos el header */
-    display: flex;
-    align-items: center; /* Centrar verticalmente el contenido */
-    padding: 40px 0; /* Padding interno */
+.hero { /* Clase de la sección */
+    min-height: calc(80vh - var(--header-height));
+    display: flex; align-items: center; text-align: center;
+    /* z-index: 2; ya está en section */
 }
 
-.hero-content {
-    max-width: 900px; /* Limitar ancho del contenido hero */
-    margin: 0 auto; /* Centrar */
-    text-align: center;
+.hero-title { 
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2.8rem, 7vw, 4.2rem);
+    font-weight: 800;
+    color: var(--color-text);
+    letter-spacing: 0.03em; 
+    margin-bottom: 0.5em; 
 }
 
+.hero-title span {
+    font-family: 'Fira Code', monospace;
+    font-weight: 450;
+    color: #74cc0f;
+
+}
+
+.hero-content { margin: 0 auto; padding: 0 20px; max-width: 700px; }
 .hero h1 {
-    /* Estilo H1 ya definido globalmente */
+    color: var(--color-heading);
+    font-size: clamp(2.8rem,7vw,4rem);
+    line-height: 1.3;
     margin-bottom: 0.5em;
-    font-size: 100px;
+    font-weight: 600;
 }
-
-.hero p {
-    font-size: 1.1rem; /* Ligeramente más grande */
-    color: var(--color-text); /* Color de texto gris claro */
-    margin-bottom: 1.5em;
-    font: var(--font-monospace); /* Cambiar a fuente monoespaciada */
+.hero p { 
+    font-weight: 400;
+    color: var(--color-text); 
+    font-size: 1.1rem; 
+    margin-bottom: 1.5em; 
+    max-width: 60ch; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 /* --- Botones --- */
-.btn-primary, .btn-secondary { /* Estilo base común */
-    display: inline-block;
-    padding: 12px 25px;
-    border: 2px solid var(--color-accent);
-    font-family: var(--font-primary);
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    text-align: center;
+.btn-primary, .btn-secondary { 
+    display: inline-block; 
+    padding: 12px 25px; 
+    border: 2px solid var(--color-accent); 
+    font-family: var(--font-primary); 
+    font-weight: 700; 
+    font-size: 1rem; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    text-align: center; 
 }
 
-.btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-background); /* Texto oscuro sobre fondo accent */
+.btn-primary { 
+    background-color:transparent; 
+    color: var(--color-accent); 
+}
+.btn-primary:hover { 
+    background-color: var(--color-accent); 
+    border-color: var(--color-accent); 
+    color: var(--color-background); 
 }
 
-.btn-primary:hover {
-    background-color: var(--color-accent-darker);
-    border-color: var(--color-accent-darker);
-    color: var(--color-background);
-}
+.btn-secondary { background-color: transparent; color: var(--color-accent); }
+.btn-secondary:hover { background-color: rgba(100, 255, 218, 0.1); color: var(--color-accent-darker); border-color: var(--color-accent-darker); }
 
-.btn-secondary {
-    background-color: transparent;
-    color: var(--color-accent);
-}
-
-.btn-secondary:hover {
-    background-color: var(--color-accent);
-    color: var(--color-background);
-}
-
-/* --- Sección: About --- */
-.about {
-    background-color: #1a1a1a; /* Fondo ligeramente diferente si quieres */
-}
-
-/* --- Sección: Projects --- */
-.projects {
-    /* Estilos generales de la sección */
-}
-
+/* --- Sección: Projects (Restaurada) --- */
+.projects {} /* No necesita estilos especiales si usa .container */
 .project-list {
-    display: grid; /* Usamos Grid */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 2em; /* Espacio después del H2 */
+    margin-top: 2em;
 }
-
 .project-item {
-    background-color: #1f1f1f; /* Color de tarjeta */
+    background-color: var(--color-card-bg);
     border: 1px solid var(--color-border);
     border-radius: 4px;
     padding: 25px;
-    display: flex; /* Usar flex para organizar contenido interno */
+    display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .project-item:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+.project-item h3 { color: var(--color-accent); margin-bottom: 10px; font-size: 1.3rem; }
+.project-item p { font-size: 0.9rem; margin-bottom: 15px; flex-grow: 1; max-width: none; /* Permitir que llene la tarjeta */ }
+.project-item .btn-secondary { margin-top: auto; align-self: flex-start; }
 
-.project-item h3 {
-    color: var(--color-accent); /* Título de tarjeta con acento */
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-}
-
-.project-item p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    flex-grow: 1; /* Hace que el párrafo ocupe espacio disponible */
-}
-
-.project-item .btn-secondary {
-    margin-top: auto; /* Empuja el botón hacia abajo */
-    align-self: flex-start; /* Alinea el botón a la izquierda */
-}
-
-/* --- Sección: Contact --- */
-.contact {
-    background-color: #1a1a1a; /* Fondo ligeramente diferente si quieres */
-}
-
-.contact-form {
-    max-width: 600px; /* Limitar ancho del form */
-    margin: 2em auto 0 auto; /* Centrar y espaciar */
-}
-
-.contact-form label {
-    display: block; /* Labels en su propia línea */
-    margin-bottom: 8px;
-    font-weight: 700;
-    color: var(--color-text);
-}
-
+/* --- Sección: Contact (Restaurada) --- */
+.contact {} /* No necesita estilos especiales si usa .container */
+.contact-form { max-width: 600px; margin: 2em auto 0 auto; }
+.contact-form label { display: block; margin-bottom: 8px; font-weight: 700; color: var(--color-text); }
 .contact-form input[type="text"],
 .contact-form input[type="email"],
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    background-color: #222;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    color: var(--color-text);
-    font-family: var(--font-primary);
-    font-size: 1rem;
-}
-
+.contact-form textarea { width: 100%; padding: 12px; margin-bottom: 20px; background-color: #222; border: 1px solid var(--color-border); border-radius: 4px; color: var(--color-text); font-family: var(--font-primary); font-size: 1rem; }
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--color-accent);
-}
-
-.contact-form textarea {
-    resize: vertical; /* Permitir redimensionar solo verticalmente */
-    min-height: 120px;
-}
-
-.contact-form button[type="submit"] {
-    /* Usa los estilos de .btn-primary definidos antes */
-    width: 100%; /* Ocupar todo el ancho */
-}
-
+.contact-form textarea:focus { outline: none; border-color: var(--color-accent); box-shadow: 0 0 5px hsla(168, 100%, 60%, 0.5); }
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form button[type="submit"] { width: 100%; } /* Hereda estilos de .btn-primary */
 
 /* --- Footer --- */
-.footer {
-    position: relative; /* Para que no se superponga al contenido */
-    z-index: 1; /* Asegurarse que esté por encima del background */
-    background-color: #111; /* Igual que el body o ligeramente diferente */
-    color: #aaa;
-    padding: 30px 0; /* Padding vertical */
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 80px;
-    border-top: 1px solid var(--color-border);
+footer.footer {
+    position: relative; z-index: 1;
+    background-color: #000; /* Fondo negro sólido */
+    color: #aaa; padding: 30px 0; text-align: center; font-size: 0.9rem; margin-top: 80px; border-top: 1px solid var(--color-border);
 }
+.footer p { margin: 0; max-width: none; }
 
-.footer p {
-    margin: 0; /* Quitar margen default del p dentro del footer */
-    max-width: none; /* Permitir que ocupe el ancho */
-}
-
-
-/* --- Responsive Básico (Ajustar según necesidad) --- */
+/* --- Responsive Básico --- */
 @media (max-width: 768px) {
-    :root {
-        --header-height: 60px; /* Header más pequeño en móvil */
-    }
-    body {
-        padding-top: var(--header-height);
-        font-size: 15px;
-    }
+    :root { --header-height: 60px; }
+    body { padding-top: var(--header-height); font-size: 15px; }
     h1 { font-size: 2rem; }
     h2 { font-size: 1.75rem; }
-
-    .header {
-        padding: 0 15px;
-    }
-    .navbar {
-        /* Aquí iría la lógica para menú hamburguesa si lo implementas */
-    }
-    .nav-links {
-        /* Por defecto oculto en móvil, se mostraría con JS */
-        /* display: none; */
-        gap: 15px; /* Menos espacio */
-    }
-
-    section {
-        padding: 60px 0;
-    }
-
-    .project-list {
-        grid-template-columns: 1fr; /* Una columna en móvil */
-        gap: 20px;
-    }
+    .header { padding: 0 15px; }
+    .navbar { /* Lógica menú hamburguesa iría aquí */ }
+    .nav-links { gap: 15px; /* Podrías ocultar esto y mostrar botón hamburguesa */ }
+    section { padding: 60px 0; }
+    .project-list { grid-template-columns: 1fr; gap: 20px; }
 }
