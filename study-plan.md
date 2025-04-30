@@ -25,14 +25,18 @@ Este método me permite enfocarme, aplicar los conocimientos de forma práctica 
 * **Nivel:** De 0 a Intermedio en Frontend estático y Git.
 * **Recursos Clave:** [MDN Web Docs (ES)](https://developer.mozilla.org/es/docs/Web), [Libro Pro Git (ES)](https://git-scm.com/book/es/v2)
 
-## Fase 2: Dinamismo Frontend & Python Backend 🐍
+## Fase 2: Desarrollo Backend con Python, Django y BBDD 🐍
 
-* **Objetivo:** JavaScript avanzado (DOM, Asincronía, ES6+). Fundamentos sólidos de Python (sintaxis, estructuras de datos, POO). Introducción a Bases de Datos Relacionales y MySQL 💾. Testing unitario básico (`unittest`/`pytest`). Inglés técnico 🇬🇧.
-* **Enfoque:** Hacer sitios web interactivos. Dominar Python (¡con PEP 8!). Entender BBDD.
-* **Nivel:** Intermedio en Frontend dinámico, Intermedio en Python, Principiante en BBDD y Testing.
-* **Recursos Clave:** [MDN JavaScript (ES)](https://developer.mozilla.org/es/docs/Web/JavaScript), [Tutorial Python Oficial (ES)](https://docs.python.org/es/3/tutorial/index.html), [PEP 8 Guide](https://peps.python.org/pep-0008/)
+* **Objetivo:** Dominar Python (incluyendo OOP), fundamentos de Bases de Datos Relacionales y SQL, desarrollo de aplicaciones web robustas con Django. Alineado con Informatorio Etapa 2.
+* **Enfoque:** Construir la lógica de negocio y la persistencia de datos.
+* **Bitácoras Detalladas por Etapa:**
+    * `- [Etapa 2A: Preparación Python - Setup y Fundamentos Básicos](./ETAPA-02A_Python_Setup_Basics.md)` 
+    * `- Etapa 2B: Python Intermedio y OOP (Próximamente)`
+    * `- Etapa 2C: Bases de Datos y SQL (Próximamente)`
+    * `- Etapa 2D: Django Básico (Próximamente)`
+ **Recursos Clave:** [Tutorial Python Oficial (ES)](https://docs.python.org/es/3/tutorial/index.html), [PEP 8 Guide](https://peps.python.org/pep-0008/)
 
-## Fase 3: Full-Stack con Django & Intro SIG 🗺️
+## Fase 3: Full-Stack Avanzado & GIS/Datos 🗺️
 
 * **Objetivo:** Framework Django (ORM, Vistas, Templates, Admin, Forms). APIs REST básicas (DRF). Conexión Frontend-Backend. Testing en Django. Introducción a SIG (Conceptos, QGIS básico). Intro Análisis de Datos con Python (Pandas, NumPy) 📊.
 * **Enfoque:** Construir aplicaciones web completas. Aprender ecosistema Django. Primeros pasos Geoespaciales y con Datos.
