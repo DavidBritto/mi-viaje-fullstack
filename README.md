@@ -1,90 +1,61 @@
 # 👋 ¡Hola! Soy David Britto
-¡Bienvenido/a a mi espacio en GitHub! Soy un apasionado por la tecnología con un background en diseño UX/UI, actualmente inmerso en una transformación profesional para convertirme en un desarrollador con profundas capacidades en **Python, Análisis de Datos, Machine Learning y desarrollo web backend**.
 
-Este repositorio es mi bitácora central, donde documento mi aprendizaje, proyectos y los caminos que estoy recorriendo para alcanzar mis metas.
-Estoy estudiando Fullstack Developer en el Informatorio, tambien Python orientado al Machine Learning en EducationIT, y ¡Arranque el reto de 90 dias de @RoxsRoss!
-Todo eso iré documentando aqui.
----
+¡Bienvenido/a a mi GitHub! Soy un apasionado por la tecnología con un background en **diseño UX/UI**, actualmente inmerso en una transformación profesional hacia el **Desarrollo Backend, Data & IA con Python**.
 
-## 🎯 Mi Hoja de Ruta y "Línea de Tiempo" de Aprendizaje
-
-Aquí trazo mi evolución, combinando formación estructurada con autoestudio guiado para construir un perfil técnico sólido y versátil.
-
-### ⏳ **Actualmente Cursando / En Enfoque Inmediato:**
-
-* **Informatorio Chaco - Etapa 2 (Backend con Python):**
-    * **Temas:** Python (avanzando desde fundamentos), Django, MySQL, Git.
-    * **Objetivo:** Desarrollar aplicaciones web robustas y escalables del lado del servidor.
-* **Digitalers - Curso de Inteligencia Artificial (6 meses):**
-    * **Iniciado:** Mayo 2025 (2 clases por semana).
-    * **Módulos Actuales/Próximos:**
-        * [X] Python para no programadores (repaso y fundamentos)
-        * [X] Introducción al paradigma de objetos
-        * [ ] Introducción a base de datos y SQL
-        * [X] Python Programming (consolidación)
-    * **Objetivo:** Establecer una base sólida en los principios de IA y las herramientas de Python para datos.
-
-### 📚 **Mi Autoestudio Profundo y Estructurado:**
-
-Paralelamente, sigo una ruta de autoaprendizaje intensivo basada en el completo temario del "Diplomado: Dominando Python: De Básico a Avanzado para Inteligencia Artificial" de la UTN, para asegurar una comprensión profunda y habilidades prácticas.
-
-* **NIVEL 01: Fundamentos de Python (En Progreso / Próximo Enfoque Profundo)**
-    * [X] **Módulo 01: PYTHON BÁSICO:** Sintaxis, variables, tipos, operadores, condicionales, bucles, funciones, manejo de errores.
-    * [X] **Módulo 02: ESTRUCTURAS DE DATOS Y MANIPULACIÓN:** Listas, tuplas, conjuntos, diccionarios, comprensión, archivos, librerías estándar.
-    * [X] **Módulo 03: PROGRAMACIÓN ORIENTADA A OBJETOS (POO):** Clases, objetos, herencia, polimorfismo, módulos/paquetes.
-    * [ ] **Módulo 04: INTRODUCCIÓN A IA Y DATA SCIENCE:** NumPy, Pandas, Matplotlib, Scikit-learn (introducción).
-
-### 🚀 **Hacia Dónde Voy (Objetivos a Mediano y Largo Plazo - Temario UTN / Digitalers):**
-
-* **Python Avanzado para Data Science (Continuación Digitalers):**
-    * [ ] Dominio de NumPy y Pandas para manipulación y análisis avanzado de datos.
-    * [ ] Visualización de Datos (Matplotlib, Seaborn, Plotly, Folium - ¡conectando con GIS!).
-    * [ ] Prompt Engineering
-* **Machine Learning:**
-    * [ ] Preprocesamiento de datos y modelos de ML básicos con Scikit-learn (Regresión, Clasificación, Clustering).
-    * [ ] Evaluación de modelos, validación cruzada.
-    * [ ] ML Intermedio: Árboles de Decisión, Random Forests, Reducción de dimensionalidad.
-    * [ ] Introducción a Redes Neuronales y Deep Learning (CNN, RNN).
-    * [ ] Procesamiento de Lenguaje Natural (NLP) básico.
-* **Desarrollo Backend y Herramientas Avanzadas:**
-    * [ ] Consolidación de Django y MySQL.
-    * [ ] Creación de APIs (Flask/FastAPI).
-    * [ ] Docker y conceptos de despliegue en la nube.
-* **Bases de Datos y SQL:**
-    * [ ] SQL Avanzado y diseño de bases de datos.
-    * [ ] Exploración de bases de datos NoSQL.
-* **Especialización Adicional:**
-    * [ ] Aplicación de Data Science y ML a problemáticas del sector Agro y GIS (Proyecto "AgroMonitor Inteligente").
-    * [ ] Continuar explorando Prompt Engineering y sus aplicaciones.
+Este repositorio es mi bitácora central, donde documento mi aprendizaje, proyectos y los caminos que estoy recorriendo para alcanzar mis metas todo mi autoestudio esta tomado del temario de la Diplomatura en Python de la UTN.
 
 ---
 
-## 🛠️ Tecnologías y Habilidades en Foco
+## 🚀 Mi Foco Actual: ¡Ruta de Aprendizaje Intensiva!
 
-* **Lenguajes:** **Python** (principal), SQL, HTML5, CSS3.
-* **Frameworks Backend:** **Django**, Flask, FastAPI (en aprendizaje).
-* **Datos & IA:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Prompt Engineering (en aprendizaje).
-* **Bases de Datos:** MySQL, SQLite (explorando otras).
-* **Herramientas:** Git, GitHub, VS Code, Jupyter Notebooks.
-* **Conceptos:** POO, MVC, APIs REST, Análisis de Datos, Machine Learning, Desarrollo Web.
-* **UX/UI:** Diseño Centrado en el Usuario, Prototipado (Figma), Investigación (background).
+Actualmente estoy combinando formación estructurada y desafíos prácticos para construir un perfil técnico sólido y versátil.
+
+* **☁️ #90DaysOfDevOps Challenge:** ¡Arrancando el reto de 90 días de Cloud y DevOps guiado por **[@RoxsRoss](https://github.com/rossanajs)**! Enfocado en aprender los fundamentos de la nube, CI/CD, Docker y automatización.
+* **🧠 Curso de Inteligencia Artificial con Python (EducationIT):** Formación de 6 meses (2 clases/semana) para dominar desde los fundamentos de Python y POO hasta el Análisis de Datos y Machine Learning.
+* **💻 Fullstack Developer (Informatorio Chaco):** Cursando la Etapa 2, enfocada en el desarrollo de aplicaciones web con Python, Django y MySQL.
 
 ---
 
-## 📂 Proyectos Destacados
+## 🛠️ Tecnologías y Habilidades
 
-* **[Generador de Contraseñas Seguras (Python & Tkinter)](https://github.com/informatorio-com/6-Error_404_Ptkinter/tree/main)**: Aplicación de escritorio para crear contraseñas personalizadas.
-* **[Portfolio Personal (HTML, CSS, Próximamente JS)](./):** (Aqui irá mi enlace)Este mismo espacio y mi landing page, ¡siempre en evolución!
-* **(Idea en Desarrollo) :** Proyecto conceptual para aplicar análisis de datos y ML al sector agrícola u otro interesante.
+Aquí listo las tecnologías que domino y en las que estoy profundizando activamente.
 
-*(Aquí irás añadiendo tus proyectos más relevantes a medida que los desarrolles)*
+* **Backend & Data Science:** [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)]()
+    [![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+    [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+    [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+    [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+    [![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931A.svg?logo=scikit-learn&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+
+* **DevOps & Cloud:** [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
+    [![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
+    [![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
+
+* **Frontend & Diseño:** [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)]()
+    [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)]()
+    [![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)]()
+
+* **Otras Herramientas:** [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)]()
+    [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)]()
+    [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge)]()
 
 ---
 
-## 💬 Contacto
+## 📊 Mis Estadísticas de GitHub
+
+<p align="center">
+  <a href="https://github.com/TU_USUARIO_GITHUB">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO_GITHUB&show_icons=true&theme=dark&hide_border=true&count_private=true&locale=es" alt="Estadísticas de GitHub" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_GITHUB&layout=compact&theme=dark&hide_border=true&langs_count=8&locale=es" alt="Lenguajes más Usados" />
+  </a>
+</p>
+
+---
+
+## 📫 Conecta Conmigo
 
 ¡Siempre estoy abierto a aprender y colaborar!
 
-* **LinkedIn:** 
-* **Correo:** 
-* **Discord:**
+<p align="left">
+  <a href="URL_DE_TU_LINKEDIN" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Nombre en LinkedIn" height="30" width="40" /></a>
+  </p>
