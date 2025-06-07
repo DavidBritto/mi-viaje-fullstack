@@ -18,26 +18,31 @@ Actualmente estoy combinando formación estructurada y desafíos prácticos para
 
 ## 🛠️ Tecnologías y Habilidades
 
-Aquí listo las tecnologías que domino y en las que estoy profundizando activamente.
+Aquí listo las tecnologías que uso y en las que estoy profundizando.
 
-* **Backend & Data Science:** [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)]()
-    [![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge)]() *(En Progreso)*
-    [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)]() *(En Progreso)*
-    [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)]() *(En Progreso)*
-    [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)]() *(En Progreso)*
-    [![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931A.svg?logo=scikit-learn&logoColor=white&style=for-the-badge)]() *(En Progreso)*
+### ✅ Habilidades Consolidadas
 
-* **DevOps & Cloud:** [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
-    [![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
-    [![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white&style=for-the-badge)]() *(Aprendiendo)*
+* **Diseño UX/UI:** [![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)]() [![Adobe XD](https://img.shields.io/badge/Adobe_XD-FF61F6?logo=adobexd&logoColor=white&style=for-the-badge)]()
+* **Frontend:** [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)]() [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)]()
+* **Herramientas:** [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)]() [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)]() [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge)]()
 
-* **Frontend & Diseño:** [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)]()
-    [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)]()
-    [![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge)]()
+### 🌱 Actualmente Aprendiendo y Profundizando
 
-* **Otras Herramientas:** [![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)]()
-    [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)]()
-    [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge)]()
+* **Backend & Data Science (Foco Principal):**
+    [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)]()
+    [![Django](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge)]()
+    [![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge)]()
+    [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)]()
+    [![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)]()
+    [![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931A.svg?logo=scikit-learn&logoColor=white&style=for-the-badge)]()
+
+* **DevOps & Cloud (#90DaysOfDevOps):**
+    [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge)]()
+    [![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge)]()
+    [![Azure](https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white&style=for-the-badge)]()
+
+* **Frontend (Complementario):**
+    [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)]()
 
 ---
 
