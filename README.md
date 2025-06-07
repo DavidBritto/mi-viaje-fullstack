@@ -1,83 +1,91 @@
-# 👋 ¡Hola! Soy David Britto
+# Bitácora de Aprendizaje y Roadmap Integrado (Q2 2025 en adelante)
 
-¡Bienvenido/a a mi GitHub! Soy un apasionado por la tecnología con un background en **diseño UX/UI**, actualmente inmerso en una transformación profesional hacia el **Desarrollo Backend, Data & IA con Python**.
-
-Este repositorio es mi bitácora central, donde documento mi aprendizaje, proyectos y los caminos que estoy recorriendo para alcanzar mis metas.
+Este es mi plan de estudio centralizado para mi transformación hacia un perfil de **Desarrollador con especialización en Data, IA y Backend**. El objetivo es integrar la formación estructurada con el autoestudio profundo, documentando el progreso de manera clara.
 
 ---
 
-## 🚀 Mi Foco Actual: ¡Ruta de Aprendizaje Intensiva!
+## ⏳ Focos de Aprendizaje Activos (En Curso)
 
-Actualmente estoy combinando formación estructurada y desafíos prácticos para construir un perfil técnico sólido y versátil.
+Aquí registro el progreso de los cursos y desafíos estructurados que estoy realizando actualmente. Iré marcando los temas a medida que los complete.
 
-* **☁️ #90DaysOfDevOps Challenge:** ¡Arrancando el reto de 90 días de Cloud y DevOps guiado por **[@RoxsRoss](https://github.com/rossanajs)**! Enfocado en aprender los fundamentos de la nube, CI/CD, Docker y automatización.
-* **🧠 Curso de Inteligencia Artificial con Python (Digitalers):** Formación de 6 meses (2 clases/semana) para dominar desde los fundamentos de Python y POO hasta el Análisis de Datos y Machine Learning.
-* **💻 Fullstack Developer (Informatorio Chaco):** Cursando la Etapa 2, enfocada en el desarrollo de aplicaciones web con Python, Django y MySQL.
+* **[ ] Informatorio Chaco - Etapa 2: Desarrollo Web con Python**
+    * **Foco:** Construir aplicaciones web full-stack.
+    * **Temas Principales:**
+        * [ ] Python (Fundamentos y POO)
+        * [ ] MySQL y Bases de Datos Relacionales
+        * [ ] Django (Framework Backend)
+        * [x] Git (Uso continuo y avanzado)
+    * **Temas específicos vistos en clase:**
+        * [x] Variables, Tipos, Operadores, Estructuras de Control.
+        * [x] Estructuras de Datos (Listas, Tuplas, Conjuntos, Diccionarios).
+        * [ ] POO Programación Orientada a Objetos
 
----
+* **[ ] Digitalers - Curso de Inteligencia Artificial**
+    * **Foco:** Fundamentos de Python aplicados al Análisis de Datos y Machine Learning.
+    * **Temas principales:**
+        * [x] Módulo 1: Fundamentos de Programación con Python
+        * [ ] Módulo 2: Programación Orientada a Objetos (POO)
+        * [ ] Módulo 3: Introducción a Bases de Datos y SQL
+        * [ ] Módulo 4: Análisis de Datos y Machine Learning (NumPy, Pandas, Scikit-learn)
+        * [x] Tema Transversal: Prompt Engineering
+        * [x] Tema Transversal: LLM Large Lenguaje Model
 
-## 🛠️ Tecnologías y Habilidades
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Habilidades_Consolidadas-5A6988?style=for-the-badge" alt="Habilidades Consolidadas"/>
-</p>
-
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=for-the-badge" alt="Figma"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Adobe_XD-FF61F6?logo=adobexd&logoColor=white&style=for-the-badge" alt="Adobe XD"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML5"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge" alt="CSS3"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge" alt="Git"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/VS_Code-007ACC?logo=visualstudiocode&logoColor=white&style=for-the-badge" alt="VS Code"/></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Aprendiendo_y_Profundizando-5A6988?style=for-the-badge" alt="Actualmente Aprendiendo"/>
-</p>
-
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Python"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Django-092E20?logo=django&logoColor=white&style=for-the-badge" alt="Django"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white&style=for-the-badge" alt="MySQL"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" alt="Pandas"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" alt="NumPy"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/scikit--learn-F7931A.svg?logo=scikit-learn&logoColor=white&style=for-the-badge" alt="Scikit-learn"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white&style=for-the-badge" alt="Docker"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/AWS-232F3E?logo=amazon-aws&logoColor=white&style=for-the-badge" alt="AWS"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/Azure-0078D4?logo=microsoft-azure&logoColor=white&style=for-the-badge" alt="Azure"/></a>
-  <a href="#"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge" alt="JavaScript"/></a>
-</p>
-
-*Puedes encontrar más badges y generar los tuyos en [Shields.io](https://shields.io/).*
+* **[ ] #90DaysOfDevOps Challenge con Rossana Suárez**
+    * **Foco:** Aprender los fundamentos de la cultura, herramientas y prácticas de DevOps y Cloud.
+    * **Temas a Cubrir:** 
+        * [ ] Fundamentos de la Nube (AWS, Azure, GCP)
+        * [ ] Contenedores (Docker)
+        * [ ] Integración y Entrega Continua (CI/CD)
+        * [ ] Iré añadiendo...
 
 ---
 
-## 📊 Mis Estadísticas de GitHub
+## 🗺️ Roadmap de Autoestudio Profundo (Guía Temario UTN)
 
-<p align="center">
-  <a href="https://github.com/TU_USUARIO_GITHUB">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=TU_USUARIO_GITHUB&show_icons=true&theme=dark&hide_border=true&count_private=true&locale=es" alt="Estadísticas de GitHub de David Britto" />
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=TU_USUARIO_GITHUB&layout=compact&theme=dark&hide_border=true&langs_count=8&locale=es" alt="Lenguajes más Usados" />
-  </a>
-</p>
+Utilizo el temario del "Diplomado en Python para IA" de la UTN como un mapa completo para asegurar que cubro todos los temas importantes, profundizo en áreas clave y lleno los vacíos que puedan dejar los otros cursos.
 
-*Puedes personalizar el `theme` y otras opciones como se indica en la documentación de [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats).*
+### ✅ Temas del Roadmap UTN Cubiertos (o en Proceso) por Mis Cursos Actuales
+
+* **Python Básico (Nivel 1, Módulo 1):**
+    * `- Sintaxis, Variables, Tipos, Operadores, Condicionales, Bucles, Funciones, Manejo de Errores.` *(Cubierto por **Informatorio** y **Digitalers**)*
+* **Estructuras de Datos (Nivel 1, Módulo 2):**
+    * `- Listas, Tuplas, Conjuntos, Diccionarios, Comprensión, Manejo de Archivos.` *(Cubierto por **Informatorio** y **Digitalers**)*
+* **Programación Orientada a Objetos (POO) (Nivel 1, Módulo 3):**
+    * `- Clases, Objetos, Herencia, Polimorfismo.` *(Cubierto por **Digitalers** e **Informatorio**)*
+* **Bases de Datos y SQL (Nivel 1, Módulo 3 y más):**
+    * `- Introducción a BBDD (SQLite, MySQL), SQL básico.` *(Cubierto por **Digitalers** e **Informatorio**)*
+* **Intro a Data Science (Nivel 1, Módulo 4 y Nivel 2):**
+    * `- NumPy, Pandas, Matplotlib/Seaborn, Intro a Scikit-learn.` *(Cubierto principalmente por **Digitalers**)*
+* **APIs, Docker y Despliegue Cloud (Nivel 3, Módulo 3):**
+    * `- Flask, Docker, Despliegue en AWS/Azure/GCP.` *(Cubierto por el desafío **#90DaysOfDevOps**)*
+
+### 🎯 Temas del Roadmap UTN para Profundizar (Autoestudio Guiado)
+
+Esta es mi lista de temas clave del temario UTN que abordaré de forma autodidacta para complementar mi formación, ya que no son el foco principal de mis cursos actuales o quiero profundizar mucho más en ellos.
+
+* **[ ] Python Avanzado:**
+    * [ ] Decoradores y Propiedades (N1 M3).
+    * [ ] Programación Funcional: `lambda`, `map`, `filter`, `reduce` (N3 M4).
+    * [ ] Programación Concurrente y Paralela (N3 M4).
+    * [ ] Creación de Paquetes y Librerías (N3 M4).
+* **[ ] Data Science y GIS Avanzado:**
+    * [ ] Álgebra Lineal con NumPy (N2 M1).
+    * [ ] Operaciones Avanzadas con Pandas (pivot tables, multi-index) (N2 M2).
+    * [ ] Visualización Interactiva con Plotly (N2 M3).
+    * [ ] **Visualización Geográfica con Folium y GeoPandas** (¡Clave para mi proyecto!) (N2 M3).
+* **[ ] Machine Learning Intermedio y Avanzado:**
+    * [ ] Árboles de Decisión y Random Forests (N3 M1).
+    * [ ] Clustering: K-Means y DBSCAN (N3 M1).
+    * [ ] Reducción de Dimensionalidad: PCA (N3 M1).
+    * [ ] Redes Neuronales (CNN, RNN) y Deep Learning (N3 M2).
+    * [ ] Procesamiento de Lenguaje Natural (NLP) y Chatbots (N3 M2).
+* **[ ] Backend y APIs (Alternativas a Django):**
+    * [ ] Creación de APIs rápidas con FastAPI (N3 M3).
 
 ---
 
-## 🌱 Aprendizaje Detallado y Proyectos
+## 📂 Proyectos de Aplicación
 
-* Documentando mi proceso detallado en mi **[Bitácora de Aprendizaje](./BITACORA_APRENDIZAJE.md)**.
-* Desarrollando mi **[Portfolio Personal](./portfolio/)** como proyecto principal de aplicación.
-* Planificando el proyecto **"AgroMonitor Inteligente"** (Concepto Agro/Data/GIS).
-
----
-
-## 📫 Conecta Conmigo
-
-¡Siempre estoy abierto a aprender y colaborar!
-
-<p align="left">
-  <a href="URL_DE_TU_LINKEDIN" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Nombre en LinkedIn" height="30" width="40" /></a>
-  </p>
+* **[Portfolio Personal (Landing Page)](./portfolio/)**: El escaparate principal de mis habilidades, en constante evolución.
+* **[Prácticas de Cursos](./ruta-a-tu-repo-de-practicas/)**: Repositorio con los ejercicios prácticos del Informatorio, Digitalers, etc.
