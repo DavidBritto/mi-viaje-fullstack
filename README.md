@@ -1,9 +1,9 @@
-# 👋 ¡Hola! Soy David Britto - En Viaje hacia el Desarrollo Full-Stack con Foco en Data & IA 🚀
-
+# 👋 ¡Hola! Soy David Britto
 ¡Bienvenido/a a mi espacio en GitHub! Soy un apasionado por la tecnología con un background en diseño UX/UI, actualmente inmerso en una transformación profesional para convertirme en un desarrollador con profundas capacidades en **Python, Análisis de Datos, Machine Learning y desarrollo web backend**.
 
 Este repositorio es mi bitácora central, donde documento mi aprendizaje, proyectos y los caminos que estoy recorriendo para alcanzar mis metas.
-
+Estoy estudiando Fullstack Developer en el Informatorio, tambien Python orientado al Machine Learning en EducationIT, y ¡Arranque el reto de 90 dias de @RoxsRoss!
+Todo eso iré documentando aqui.
 ---
 
 ## 🎯 Mi Hoja de Ruta y "Línea de Tiempo" de Aprendizaje
@@ -24,7 +24,7 @@ Aquí trazo mi evolución, combinando formación estructurada con autoestudio gu
         * [X] Python Programming (consolidación)
     * **Objetivo:** Establecer una base sólida en los principios de IA y las herramientas de Python para datos.
 
-### 📚 **Mi Autoestudio Profundo y Estructurado (Guiado por Temario UTN Diplomado IA):**
+### 📚 **Mi Autoestudio Profundo y Estructurado:**
 
 Paralelamente, sigo una ruta de autoaprendizaje intensivo basada en el completo temario del "Diplomado: Dominando Python: De Básico a Avanzado para Inteligencia Artificial" de la UTN, para asegurar una comprensión profunda y habilidades prácticas.
 
